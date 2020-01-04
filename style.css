@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css?family=Kosugi+Maru&display=swap');
+*{
+  /*border: solid 1px black;*/
+  /*font-family: 微軟正黑體;*/
+  font-family:'Kosugi Maru',sans-serif;
+}
+
+/* .navbar-nav{
+  margin-left: 200px;
+} */
+
+.container{
+  padding-top: 50px;
+}
+section{
+  padding-top: 80px;
+}
+section#s1{
+  background-color:rgba(211, 211, 211);
+}
+section#s2{
+  background-color:rgba(175, 238, 238);
+}
+section#s3{
+  background-color:rgba(255, 250, 205);
+}
+section#s4{
+  background-color:rgba(144, 238, 144);
+}
+section#s5{
+  background-color:rgba(216, 191, 216);
+}
+section#s6{
+  background-color:rgba(255, 192, 203);
+}
+/* 40px */
+.toTop-arrow {
+	width: 2.5rem;
+	height: 2.5rem;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	border-radius: 33%;
+	opacity: 0.6;
+	background: #000;
+	cursor: pointer;
+	position:fixed;
+	right: 1rem;
+	bottom: 1rem;
+	display: none;
+}
+.toTop-arrow::before, .toTop-arrow::after {
+	width: 18px;
+	height: 5px;
+	border-radius: 3px;
+	background: #f90;
+	position: absolute;
+	content: "";
+}
+.toTop-arrow::before {
+	-webkit-transform: rotate(-45deg) translate(0, -50%);
+	        transform: rotate(-45deg) translate(0, -50%);
+	left: 0.5rem;
+}
+.toTop-arrow::after {
+	-webkit-transform: rotate(45deg) translate(0, -50%);
+	        transform: rotate(45deg) translate(0, -50%);
+	right: 0.5rem;
+}
+.toTop-arrow:focus {outline: none;}
+
+body {
+  box-sizing: border-box;
+  background-color: #04214a;
+}
+
+/*卷軸
+  ==========================================*/
+.js-scrollbar{
+  position: relative;
+  overflow: hidden;
+  width: 600px;
+  height: 600px;
+}
+.js-container{
+  position: absolute;
+}
+.scrollbar_vertical{
+  width:6px;
+  position: absolute;
+  top:0px;
+  right:0px;
+  z-index: 5;
+}
+
+.scrollbar_vertical .js-dragger_bar{
+  width: 6px;
+  background-color: #999;
+  border-radius: 3px;
+  position: relative;
+  right: 0px;
+  cursor: pointer;
+}
+.scrollbar_horizontal{
+  position: absolute;
+  z-index: 5;
+  height: 6px;
+  bottom: 0px;
+  left: 0px;
+}
